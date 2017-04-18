@@ -2,6 +2,7 @@ package example.codeclan.com.wordcounter;
 
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 
 /**
@@ -10,9 +11,10 @@ import static junit.framework.Assert.assertNotNull;
 
 public class WordCountTest {
 
-//    @Test
-//    public void getInput() {
-//        assertNotNull();
-//    }
+@Test
+    public void testCountWords(){
+    WordCount wordcount = new WordCount();
+    assertEquals(5, wordcount.countWords("Hello this contains five words"));
+}
 
 }
